@@ -7,14 +7,14 @@ const password2 = document.getElementById('password2');
 // Show input error message
 function showError(input, message) {
   const formControl = input.parentElement;
-  formControl.className = 'form-control error';
-  const small = formControl.querySelector('small');
+  formControl.className = "form-control error";
+  const small = formControl.querySelector("small");
   small.innerText = message;
 }
 // Show success outline
 function showSuccess(input) {
   const formControl = input.parentElement;
-  formControl.className = 'form-control success';
+  formControl.className = "form-control success";
 }
 // Check email is valid
 function isValidEmail(email) {
@@ -24,7 +24,7 @@ function isValidEmail(email) {
 }
 
 //add event listener
-form.addEventListener('submit', function (e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   if(username.value === '') {
